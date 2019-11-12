@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UsuarioController</servlet-name>
+        <servlet-class>Controller.UsuarioController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EstadoController</servlet-name>
+        <servlet-class>Controller.EstadoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SetorController</servlet-name>
+        <servlet-class>Controller.SetorController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsuarioController</servlet-name>
+        <url-pattern>/UsuarioController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EstadoController</servlet-name>
+        <url-pattern>/EstadoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SetorController</servlet-name>
+        <url-pattern>/SetorController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
